@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RevitAddIns>
+	<AddIn Type="Application"> <!-- 1). I do only need Application type, as that App.cs will execute the command.cs -->
+		<Name>CommonAreas Add-in</Name>  <!-- 2). name of the aplication, can remain the same for all aplications -->
+		<Description>Descripcion para Tailor Bird Add-in</Description> <!-- 3). Only used for command Type -->
+		<Assembly>commonAreasApp.dll</Assembly> <!-- 4). dll. location path or the name file -->
+		<FullClassName>commonAreas.TairloBirdAplication</FullClassName> <!-- 5). the full class name for the Application.cs file that will execute the command.cs -->
+		<ClientId>a90ceb0a-edcd-40dd-af74-134bd08f4c16</ClientId> <!-- 6). A unique GUID for each registered application or command-->
+		<VendorId>TAILORBIRD</VendorId><!-- 7). Register your vendor id string with Autodesk at http://www.autodesk.com/symbreg-->
+	</AddIn>
+</RevitAddIns>
